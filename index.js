@@ -1,7 +1,7 @@
 
 
 let My_Main_Array =[];
-
+const Render_inputbox_output_of_input_div_box_el = document.querySelector(".output_of_input_div_box");
 
 
 
@@ -32,6 +32,7 @@ Add_buttonof_input_div_box.addEventListener( "click" ,  () => {      //function 
     console.log("it works Add");
     My_Main_Array.push(input_of_input_div_box.value);
     console.log(My_Main_Array);//
+    Render_inputbox_output_of_input_div_box()
     
     
 }
@@ -45,16 +46,17 @@ Remove_button_2of_input_div_box.addEventListener( "click" , () => {
     input_of_input_div_box.value = [];
     My_Main_Array = [];
     console.log(My_Main_Array);
+    Render_inputbox_output_of_input_div_box_el.innerHTML = `<li></li>`;
     
 
 });
 
 const Render_inputbox_output_of_input_div_box = () => {
  
-    const Render_inputbox_output_of_input_div_box = document.querySelector(".output_of_input_div_box");
-    console.log(output_of_input_div_box_element);
+    
+   
 
-Render_inputbox_output_of_input_div_box.innerHTML = `<li>`
+Render_inputbox_output_of_input_div_box_el.innerHTML = `<div><li id="render_li" >${My_Main_Array}</li></div>`;
     
 
 
