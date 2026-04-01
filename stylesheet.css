@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  foverflow: auto;
+
+  display: flex;
+  top: 50%;
+  left: 50%;
+
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(0, 255, 170),
+    rgba(10, 190, 190, 0.61),
+    rgba(0, 2, 128, 0.966)
+  );
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.input_div_box input {
+  display: block;
+  position: relative;
+
+  width: 50vh;
+  height: 5vh;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 25px;
+}
+button {
+  color: #8b0707a2;
+  position: relative;
+  background-color: aquamarine;
+  display: block;
+  height: 30px;
+  width: 8vw;
+  border: 2px solid rgb(12, 1, 8);
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 21px;
+  margin-top: 10px;
+}
+.input_div_box {
+  background-image: url("https://thfvnext.bing.com/th/id/OIP.tYTmXYGANrRNvuqOOBVETQHaHa?w=188&h=188&c=7&r=0&o=7&cb=thfvnext&pid=1.7&rm=3");
+  background-repeat: round;
+  background-position: 150px;
+  width: 50%;
+  height: 50%;
+  padding: 50px;
+  margin: auto;
+  border-radius: 30px;
+  border-style: ridge;
+  background-size: 150px;
+  margin-top: 50px;
+  border: 2px ridge black;
+}
+.output_of_input_div_box{
+
+  overflow: hidden;
+  height: 150px;
+  width: 60%;
+  background-color: #ebd39256;
+ position: relative;
+ top: 80%;
+ left: 50%;
+ bottom: -80px;
+ /* justify-content: center; */
+ /* align-items: center; */
+transform: translate(-50%, -50%);
+   border-style: ridge;
+   border-radius: 20px;
+   border-color: bisque;
+
+}
