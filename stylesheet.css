@@ -84,8 +84,9 @@ button {
 .render_li {
     display: block;
     color: green;
-    font-size: 18px;
+    font-size: 15px;
     text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .Icon{
 
@@ -94,11 +95,20 @@ background-size: cover;
 }
 .big_image{
 background: transparent; 
-min-height: 400px;
+height: 400px;
 width: 100%;
+background-color: #440c23a8;
 background-size: cover;
 position: absolute;
 top: 80%;
 left: 0;
 display: inline;
+}
+#video_bigcat{
+
+
+  height: inherit;
+  width: 100%;
+  overflow: cover;
+  background-size:cover;
 }
