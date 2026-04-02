@@ -66,30 +66,26 @@ button {
   margin-top: 50px;
   border: 2px ridge black;
 }
-.output_of_input_div_box{
-
-  overflow: hidden;
-  display: flex;
-  height: 150px;
+.output_of_input_div_box {
   width: 60%;
-  justify-content: space-evenly;
-  top: 50px;
-  background-color: #ebd39256;
- position: relative;
- top: 80%;
- left: 50%;
- bottom: -80px;
- /* justify-content: center; */
- /* align-items: center; */
-transform: translate(-50%, -50%);
-   border-style: ridge;
-   border-radius: 20px;
-   border-color: bisque;
+  margin: 20px auto;
   padding: 15px;
-}
-#render_li{
- display: block;
 
+  background-color: #ebd39256;
+  border: 2px ridge bisque;
+  border-radius: 20px;
+
+  height: auto;          /* allow growth */
+  overflow: visible;     /* allow expansion */
+
+  position: static;      /* keep in normal flow */
+  transform: none;       /* ❌ remove this */
+}
+.render_li {
+    display: block;
+    color: green;
+    font-size: 18px;
+    text-decoration: none;
 }
 .Icon{
 

@@ -32,7 +32,8 @@ Add_buttonof_input_div_box.addEventListener( "click" ,  () => {      //function 
     console.log("it works Add");
     My_Main_Array.push(input_of_input_div_box.value);
     console.log(My_Main_Array);//
-    Render_inputbox_output_of_input_div_box()
+    Render_inputbox_output_of_input_div_box();
+    input_of_input_div_box.value = "";
     
     
 }
@@ -52,13 +53,12 @@ Remove_button_2of_input_div_box.addEventListener( "click" , () => {
 });
 
 const Render_inputbox_output_of_input_div_box = () => {
- 
-    
-   
 
-Render_inputbox_output_of_input_div_box_el.innerHTML = `<div><li id="render_li" >${My_Main_Array}</li></div>`;
-    
+    let list_item = "";
 
+    for (let i = 0; i < My_Main_Array.length; i++) {
+        list_item += `<li class="render_li">${My_Main_Array[i]}</li>`;
+    }
 
-
-}
+    Render_inputbox_output_of_input_div_box_el.innerHTML = `<ol>${list_item}</ol>`;
+};
