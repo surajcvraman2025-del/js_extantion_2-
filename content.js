@@ -17,8 +17,7 @@ const Render_inputbox_output_of_input_div_box_el = document.querySelector(".outp
 
 
 const input_of_input_div_box = document.querySelector("#input_of_input_div_box");   //varable for input box//
-console.log(input_of_input_div_box);//
-console.log(input_of_input_div_box.value)//
+
 
 
 
@@ -57,7 +56,7 @@ const Render_inputbox_output_of_input_div_box = () => {
     let list_item = "";
 
     for (let i = 0; i < My_Main_Array.length; i++) {
-        list_item += `<li class="render_li" >${My_Main_Array[i]}</li>`;
+        list_item += `<li class="render_li" ><a href="${My_Main_Array[i]}" target="_blank" id="list_tags">${My_Main_Array[i]}</a></li>`;
     }
 
     Render_inputbox_output_of_input_div_box_el.innerHTML = `<ol>${list_item}</ol>`;
